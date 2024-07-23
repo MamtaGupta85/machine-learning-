@@ -1,0 +1,64 @@
+# Payment Fraud Detection
+
+This project aims to detect fraudulent transactions in a dataset of online transactions using various machine learning techniques. 
+The workflow includes data preprocessing, exploratory data analysis, feature scaling, handling class imbalance, model training, and evaluation.
+
+## Table of Contents
+1. Introduction
+2. Python Libraries
+3. Dataset
+4. Exploratory Data Analysis (EDA) and Preprocessing
+5. Model Training and Evaluation
+6. Results
+
+## Introduction
+
+The goal of this project is to accurately identify fraudulent transactions using machine learning models. The following models are implemented and compared:
+- Logistic Regression
+- Decision Tree Classifier
+
+## Python Libraries
+
+To run this project, you need to have the following libraries installed:
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- imbalanced-learn
+
+## Data
+
+The dataset used for this project can be found in the `onlinefraud.csv` file. 
+It contains features such as transaction type, amount, origin, destination, and a target variable indicating whether the transaction is fraudulent.
+
+## Exploratory Data Analysis (EDA) and Preprocessing
+
+1. Data Loading: Loaded the dataset using pandas.
+2. Data Inspection: Inspected the dataset dimensions, first few rows, and detailed information about each column.
+3. Data Description: Described the dataset to get a statistical overview.
+4. Missing Values: Checked for missing values in the dataset.
+5. Class Distribution: Visualized the distribution of the target variable.
+6. Outliers Removal: Removed outliers using a custom function.
+7. Feature Encoding: Encoded categorical features using `LabelEncoder`.
+8. Class Imbalance Handling: Used SMOTE to handle class imbalance.
+
+## Model Training and Evaluation
+
+### Logistic Regression
+
+1. Data Splitting: Split the data into training and testing sets.
+2. Feature Scaling: Scaled the features using `StandardScaler`.
+3. Model Training: Trained a Logistic Regression model.
+4. Model Evaluation: Evaluate the model using accuracy score and classification report. Generated 95% accuracy rate.
+
+### Decision Tree Classifier
+
+1. Feature Scaling: Scaled the features using `RobustScaler`.
+2. Model Training: Trained a Decision Tree Classifier.
+3. Model Evaluation: Evaluated the model using accuracy score, classification report, and confusion matrix.Generated 96% accuracy rate.
+
+## Results
+
+The results of the models, including accuracy scores and classification reports, are printed for comparison.
